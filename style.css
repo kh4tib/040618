@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: url(https://media.giphy.com/media/NQL7Wuo2JSQSY/giphy.gif) center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, rgba(224, 195, 252, 0.8) 100%);
+    opacity: .9;
+    position: absolute;
+    z-index: 1; }
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    font-family: 'IBM Plex Mono', monospace; }
+    .main__content .content__title {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      font-weight: 700; }
+    .main__content .content__description {
+      color: #fff;
+      margin-bottom: 1rem;
+      width: 70%; }
+    .main__content .content__button {
+      width: 16rem;
+      height: 3rem;
+      outline: none;
+      border: none;
+      font-family: 'IBM Plex Mono', monospace;
+      text-transform: uppercase;
+      background: #fff;
+      color: #E0C3FC;
+      cursor: pointer;
+      transition: 300ms ease-in-out; }
+      .main__content .content__button:hover {
+        background: #E0C3FC;
+        color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
